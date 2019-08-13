@@ -1,0 +1,91 @@
+\documentclass[11pt, a4paper]{article} \usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+% Adjust margins
+\usepackage[margin=0.7in]{geometry}
+% Indent paragraphs
+\setlength{\parindent}{4ex}
+
+% Keywords command - TODO MOVE TO .cls file
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{Keywords---} #1
+}
+
+
+%%%%%%%%%%%%
+% PACKAGES %
+%%%%%%%%%%%%
+
+\usepackage{graphicx}
+% IMAGE PATH
+\graphicspath{ {images/} }
+
+ % page size and margins
+ % https://www.overleaf.com/learn/Page_size_and_margins
+ 
+%%%%%%%%%
+% TITLE %
+%%%%%%%%%
+
+\input{JCI-Tech-Challenge-02-Title.tex}
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%
+% ABSTRACT %
+%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-03-Abstract.tex}
+
+%%%%%%%%%%%%
+% KEYWORDS %
+%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-04-Keywords.tex}
+
+%%%%%%%%%%%%%%%%
+% INTRODUCTION %
+%%%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-05-Introduction.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BRIEF HISTORY OF NEURAL NETWORKS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-06-Brief-History.tex}
+
+%%%%%%%%%%%%%%%%
+% Applications %
+%%%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-07-Applications.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Skillset and Toolset %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-08-Skillset-And-Toolset.tex}
+
+%%%%%%%%%%%%%%%%
+% PILOT SCHEME %
+%%%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-09-Pilot-Scheme.tex}
+
+%%%%%%%%%%%%%%
+% CONCLUSION %
+%%%%%%%%%%%%%%
+
+\input{JCI-Tech-Challenge-10-Conclusion.tex}
+
+%%%%%%%%%%%%%%
+% REFERENCES %
+%%%%%%%%%%%%%%
+\bibliographystyle{abbrv-doi}
+\bibliography{JCI-Tech-Challenge-11-References.bib}
+
+\end{document}
